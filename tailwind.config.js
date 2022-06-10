@@ -8,7 +8,7 @@ module.exports = {
         primary: "#FFA500",
         primary_shade: "#FF8800",
         dark: "#000000e2",
-        "regal-blue": "#243c5a",
+        neutral: "#464646",
       },
       fontFamily: {
         

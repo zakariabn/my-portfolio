@@ -1,9 +1,13 @@
-import { faArrowDown, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowDown,
+  faArrowLeft,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useSpring, animated, config } from "react-spring";
 import myImg from "../../../asset/Images/profile-img_500x500.png";
-import './Hero.css'
+import "./Hero.css";
 
 const Hero = () => {
   const props = useSpring({
@@ -15,14 +19,13 @@ const Hero = () => {
 
   return (
     <div className="bg-dark">
-      <div className="max-w-screen-xl mx-auto h-[650px]">
+      <div className="max-w-screen-xl mx-auto lg:h-[650px] px-4">
         {/* container */}
-        <div className="w-full h-full flex justify-between">
+        <div className="w-full h-full flex flex-col-reverse lg:flex-row justify-between">
           {/* content */}
-          <div className="flex-1">
-            {" "}
+          <div className="flex-1 p-4 mt-10">
             {/* this is because equal space */}
-            <div className="w-full h-full flex flex-col justify-center">
+            <div className="w-full h-full flex flex-col justify-center items-center md:items-start">
               {/* name container */}
               <div className="relative w-full mb-9">
                 <span className="w-[70px] h-[70px] bg-primary_shade rounded-full inline-block"></span>
@@ -32,33 +35,37 @@ const Hero = () => {
               </div>
 
               {/* profession */}
-              <div>
-                <h3 className="text-6xl font-bold text-white">Web Developer</h3>
-                <button className="hero-btn mt-4">
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="text-sm text-primary mr-5 hero-prj-ico-animation"
-                  />{" "}
-                  GO TO PROJECT
-                </button>
-                <button className="hero-btn ml-4 mt-4">
-                  Resume
-                  <FontAwesomeIcon
-                    icon={faArrowDown}
-                    className="text-sm text-primary ml-5 hero-res-ico-animation"
-                  />{" "}
-                </button>
+              <div className="mb-10 md:mb-0">
+                <h3 className="text-5xl md:text-6xl font-bold text-white">
+                  Web Developer
+                </h3>
+                <div className="flex flex-wrap gap-4">
+                  <button className="hero-btn mt-4">
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="text-sm text-primary mr-5 hero-prj-ico-animation"
+                    />{" "}
+                    GO TO PROJECT
+                  </button>
+                  <button className="hero-btn d:ml-4 mt-4">
+                    Resume
+                    <FontAwesomeIcon
+                      icon={faArrowDown}
+                      className="text-sm text-primary ml-5 hero-res-ico-animation"
+                    />{" "}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Images */}
-          <div className="flex-1 overflow-hidden">
+          <div className="flex-1 mx-auto overflow-hidden border-b-2 lg:border-none border-neutral">
             <animated.img
               src={myImg}
               style={props}
               alt=""
-              className="relative top-[115px]"
+              className="lg:relative lg:top-[115px]"
             />
           </div>
         </div>

@@ -11,11 +11,16 @@
 
 @layer components {
   .button {
-    @apply bg-green-400 px-4 py-2 rounded-md my-1 cursor-pointer hover:bg-green-500;
+    @apply text-white px-5 py-2 cursor-pointer border border-primary;
   }
   .hero-btn {
     @apply px-4 py-2 border border-primary_shade text-white;
   }
+
+  .input-form {
+    @apply text-white px-2 bg-transparent border-b border-neutral py-2 focus:outline-none focus:border-primary placeholder:text-white transition duration-75 ease-linear;
+  }
+
   .flex-center {
     @apply flex justify-center items-center;
   }
