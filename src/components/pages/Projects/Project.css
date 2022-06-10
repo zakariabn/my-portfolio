@@ -1,0 +1,17 @@
+.feather-list > li::before {
+  content: "●";
+  margin: 0.5rem 0.5rem;
+}
+.feather-list > li {
+  text-transform: capitalize;
+}
+
+.go-website-btn:hover {
+  color: #ff8800;
+  transition: color 0.3s ease 0.1s;
+}
+.go-website-btn:hover .go-web-ico-animation {
+  color: #ff8800;
+  transform: translateX(3px);
+  transition: transform 0.1s ease, color 0.3s ease 0.08s;
+}

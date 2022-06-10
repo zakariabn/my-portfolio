@@ -11,7 +11,7 @@ module.exports = {
         neutral: "#464646",
       },
       fontFamily: {
-        
+        "title-font": ['Inter', "sans-serif"],
       }
     },
   },
