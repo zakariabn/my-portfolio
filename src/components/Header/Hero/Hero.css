@@ -1,0 +1,8 @@
+.hero-btn:hover .hero-prj-ico-animation {
+  transform: translateX(10px);
+  transition: transform 0.3s ease;
+}
+.hero-btn:hover .hero-res-ico-animation {
+  transform: translateY(6px);
+  transition: transform 0.3s ease;
+}
