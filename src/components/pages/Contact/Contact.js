@@ -55,7 +55,7 @@ const Contact = () => {
           </button>
           <input type="hidden" name="_template" value="table"></input>
           <input type="hidden" name="_captcha" value="false"></input>
-          <input type="hidden" name="_next" value="http://localhost:3000/email-send"></input>
+          <input type="hidden" name="_next" value="https://zakaria-protfolio.netlify.app/email-send"></input>
         </form>
 
         {/*  */}
