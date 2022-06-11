@@ -17,8 +17,8 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Your Name"
+              required
               className="input-form mr-2.5 w-full"
-              id=""
             />
             <input
               type="email"
@@ -26,26 +26,36 @@ const Contact = () => {
               placeholder="Your Email"
               required
               className="input-form md:ml-2.5 w-full"
-              id=""
             />
           </div>
+          <input
+            type="text"
+            name="_subject"
+            required
+            placeholder="Subject"
+            className="input-form w-full mb-4"
+          />
           <input
             type="number"
             name="number"
             placeholder="Your Phone"
             className="input-form w-full mb-4"
-            id=""
           />
           <textarea
             name="message"
             placeholder="Message"
+            required
             rows={7}
             className="w-full input-form"></textarea>
+      
           <button
             type="submit"
             className="block mx-auto button px-10 mt-5 hover:text-primary_shade duration-100">
             Send
           </button>
+          <input type="hidden" name="_template" value="table"></input>
+          <input type="hidden" name="_captcha" value="false"></input>
+          <input type="hidden" name="_next" value="http://localhost:3000/email-send"></input>
         </form>
 
         {/*  */}

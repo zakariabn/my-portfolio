@@ -1,12 +1,9 @@
-import {
-  faArrowDown,
-  faArrowLeft,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useSpring, animated, config } from "react-spring";
 import myImg from "../../../asset/Images/profile-img_500x500.png";
+import resume from  "../../../asset/file/Zakaria-Bin-Nizam_web_dev_resume_2022.pdf"
 import "./Hero.css";
 
 const Hero = () => {
@@ -47,13 +44,17 @@ const Hero = () => {
                     />{" "}
                     GO TO PROJECT
                   </button>
-                  <button className="hero-btn d:ml-4 mt-4">
+
+                  <a
+                    className="hero-btn d:ml-4 mt-4"
+                    href={resume}
+                    download>
                     Resume
                     <FontAwesomeIcon
                       icon={faArrowDown}
                       className="text-sm text-primary ml-5 hero-res-ico-animation"
-                    />{" "}
-                  </button>
+                    />
+                  </a>
                 </div>
               </div>
             </div>
