@@ -7,7 +7,7 @@ const Projects = () => {
 const [projects, projectLoading, projectError] = useProject();
 
   return (
-    <div className=" my-20">
+    <div className=" my-20"  id="project">
       {/* title */}
       <div className="flex-h-center">
         <div className="relative mb-9 mx-auto">

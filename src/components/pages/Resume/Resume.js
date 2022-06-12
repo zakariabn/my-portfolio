@@ -4,7 +4,7 @@ import "./Resume.css";
 import Skills from "./Skills/Skills";
 const Resume = () => {
   return (
-    <div className="bg-neutral  px-4">
+    <div className="bg-neutral  px-4" id="resume">
       <div className="py-10 max-w-screen-xl mx-auto">
         {/* section title */}
         <div className="flex-h-center">
