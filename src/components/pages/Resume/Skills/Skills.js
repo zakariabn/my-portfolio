@@ -20,7 +20,7 @@ const Skills = () => {
       </div>
 
       {/* comfortable skill */}
-      <div className="border border-dark rounded-lg mt-4">
+      <div className="border border-neutral rounded-lg mt-4">
         <h2 className="skill-title pl-6 pt-4">Comfortable</h2>
         <div className="skill-container">
           {expertise.map((exp) => (
@@ -30,7 +30,7 @@ const Skills = () => {
       </div>
 
       {/* familiar skill */}
-      <div className="border border-dark rounded-lg mt-4">
+      <div className="border border-neutral rounded-lg mt-4">
         <h2 className="skill-title pl-6 pt-4">Familiar</h2>
         <div className="skill-container">
           {expertise.map((exp) => (
@@ -41,7 +41,7 @@ const Skills = () => {
 
       {/* tools skill */}
       <div className="border border-dark rounded-lg mt-4">
-        <h2 className="skill-title pl-6 pt-4">Familiar</h2>
+        <h2 className="skill-title pl-6 pt-4">Tools</h2>
         <div className="skill-container">
           {expertise.map((exp) => (
             <SkillsCard key={exp.id} skill={exp} />

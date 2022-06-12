@@ -50,7 +50,7 @@ const Contact = () => {
       
           <button
             type="submit"
-            className="block mx-auto button px-10 mt-5 hover:text-primary_shade duration-100">
+            className="block mx-auto button border border-primary text-white px-10 mt-5 hover:text-primary_shade duration-100">
             Send
           </button>
           <input type="hidden" name="_template" value="table"></input>
