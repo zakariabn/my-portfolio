@@ -11,12 +11,15 @@
 
 @layer components {
   .button {
-    @apply text-white px-5 py-2 cursor-pointer border border-primary;
+    @apply cursor-pointer px-4 py-2;
   }
+
   .hero-btn {
     @apply px-4 py-2 border border-primary_shade text-white;
   }
+
   .go-website-btn {
+    
   }
 
   .input-form {
@@ -25,5 +28,9 @@
 
   .flex-center {
     @apply flex justify-center items-center;
+  }
+
+  .flex-h-center {
+    @apply flex justify-center;
   }
 }

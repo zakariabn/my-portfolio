@@ -1,0 +1,9 @@
+:root {
+  --primary: #ffa500;
+  --primary_shade: #ff8800;
+  --dark: #000000e2;
+  --neutral: #464646;
+
+  --primary-font: "Poppins", sans-serif;
+  --title-font: "Inter", sans-serif;
+}
