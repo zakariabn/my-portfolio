@@ -6,6 +6,9 @@ import useProject from "../../../hooks/useProject";
 const Projects = () => {
 const [projects, projectLoading, projectError] = useProject();
 
+// console.log(projects);
+
+
   return (
     <div className=" my-20"  id="project">
       {/* title */}

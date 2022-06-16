@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
-const useProject = () => {
+const useSingleProject = (id) => {
 
-  const [projects, setProjects] = useState([]);
+  const [project, setProject] = useState({});
   const [projectLoading, setProjectLoading] = useState(true);
   const [projectError, setProjectError] = useState(null);
 
@@ -13,12 +13,15 @@ const useProject = () => {
       .then((res) => res.json())
       .then((data) => {
         setProjectLoading(false);
-        setProjects(data)
+        const projectData = data?.find(d => d._id === id);
+        if (projectData) {
+          setProject(projectData);
+        }else setProjectError(projectData);
       })
       .catch (error => setProjectError(error));
-  }, []);
+  }, [id]);
 
-  return [projects, projectLoading, projectError]
+  return [project, projectLoading, projectError]
 };
 
-export default useProject;
+export default useSingleProject;

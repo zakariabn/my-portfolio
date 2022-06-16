@@ -3,11 +3,11 @@
   {
     "_id": "62a431b292228896d3fc74cb",
     "name": "E-warehouse",
-    "logo": "./project-asset/e-warehouse/e-warehouse-logo.png",
+    "logo": "/project-asset/e-warehouse/e-warehouse-logo.png",
     "screen_short": [
-      "./project-asset/e-warehouse/e-warehouse-ss-1.png",
-      "./project-asset/e-warehouse/e-warehouse-ss-2.png",
-      "./project-asset/e-warehouse/e-warehouse-ss-3.png"
+      "/project-asset/e-warehouse/e-warehouse-ss-1.png",
+      "/project-asset/e-warehouse/e-warehouse-ss-2.png",
+      "/project-asset/e-warehouse/e-warehouse-ss-3.png"
     ],
     "bullet_point": [
       "bullet point one",
@@ -20,12 +20,12 @@
   {
     "_id": "62a431b276409db5fe5cf09b",
     "name": "Orbit Tools",
-    "logo": "./project-asset/orbit-tools/orbit-tools-logo.png",
+    "logo": "/project-asset/orbit-tools/orbit-tools-logo.png",
     "screen_short": [
-      "./project-asset/orbit-tools/orbit-tools-ss-1.png",
-      "./project-asset/orbit-tools/orbit-tools-ss-2.png",
-      "./project-asset/orbit-tools/orbit-tools-ss-3.png",
-      "./project-asset/orbit-tools/orbit-tools-ss-4.png"
+      "/project-asset/orbit-tools/orbit-tools-ss-1.png",
+      "/project-asset/orbit-tools/orbit-tools-ss-2.png",
+      "/project-asset/orbit-tools/orbit-tools-ss-3.png",
+      "/project-asset/orbit-tools/orbit-tools-ss-4.png"
     ],
     "bullet_point": [
       "bullet point one",
@@ -38,11 +38,11 @@
   {
     "_id": "62a431b24893dbec4cefa374",
     "name": "Tooth Care",
-    "logo": "./project-asset/tooth-care/tooth-care-logo-sm.png",
+    "logo": "/project-asset/tooth-care/tooth-care-logo-sm.png",
     "screen_short": [
-      "./project-asset/tooth-care/tooth-care-ss-1.png",
-      "./project-asset/tooth-care/tooth-care-ss-2.png",
-      "./project-asset/tooth-care/tooth-care-ss-3.png"
+      "/project-asset/tooth-care/tooth-care-ss-1.png",
+      "/project-asset/tooth-care/tooth-care-ss-2.png",
+      "/project-asset/tooth-care/tooth-care-ss-3.png"
     ],
     "bullet_point": [
       "bullet point one",
