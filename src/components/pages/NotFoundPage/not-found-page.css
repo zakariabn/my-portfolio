@@ -1,0 +1,27 @@
+.custom-css {
+  position: relative;
+  z-index: 1;
+}
+
+.custom-css::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.09;
+  z-index: -1;
+}
+
+.go-back-hover-effect {
+  transition: color 200ms ease-in-out, transform 100ms ease 200ms;
+}
+
+.custom-hover-effect:hover  .go-back-hover-effect {
+  color: rgb(16, 36, 88) !important;
+  transform: translateX(-90px) rotate(-45deg);
+}

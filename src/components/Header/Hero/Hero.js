@@ -5,6 +5,7 @@ import { useSpring, animated, config } from "react-spring";
 import myImg from "../../../asset/Images/profile-img_500x500.png";
 import resume from  "../../../asset/file/Zakaria-Bin-Nizam_web_dev_resume_2022.pdf"
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const props = useSpring({
@@ -40,9 +41,9 @@ const Hero = () => {
                   <button className="hero-btn mt-4">
                     <FontAwesomeIcon
                       icon={faArrowRight}
-                      className="text-sm text-primary mr-5 hero-prj-ico-animation"
+                      className="text-sm text-primary mr-5 transition hero-prj-ico-animation"
                     />{" "}
-                    GO TO PROJECT
+                    <Link to="/project">GO TO PROJECT</Link>
                   </button>
 
                   <a
