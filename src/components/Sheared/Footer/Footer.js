@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./footer.css";
 
 const Footer = () => {
   return (
@@ -99,8 +101,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mx-6 py-10 text-center md:text-left">
-        <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
+        <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8 footer-custom-css">
           {/* short about me paragraph */}
           <div className="">
             <h6
@@ -129,7 +130,8 @@ const Footer = () => {
               About Me
             </h6>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, inventore!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              inventore!
             </p>
           </div>
 
@@ -139,10 +141,11 @@ const Footer = () => {
             <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Project Link
             </h6>
+
             <p className="mb-4">
-              <a href="#!" className="text-gray-400">
+              <Link to={{ pathname: "/https://orbit-tools.web.app/" }} target="_blank">
                 Orbit Tools
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
               <a href="#!" className="text-gray-400">
@@ -151,12 +154,7 @@ const Footer = () => {
             </p>
             <p className="mb-4">
               <a href="#!" className="text-gray-400">
-              Tooth Care
-              </a>
-            </p>
-            <p>
-              <a href="#!" className="text-gray-400">
-                Hotel App
+                Tooth Care
               </a>
             </p>
           </div>
@@ -167,24 +165,24 @@ const Footer = () => {
               Useful links
             </h6>
             <p className="mb-4">
-              <a href="#!" className="text-gray-400">
+              <Link to="/" className="">
                 Home
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-400">
-                About
-              </a>
-            </p>
-            <p className="mb-4">
-              <a href="#!" className="text-gray-400">
+              <Link to="/project" className="">
                 Project
-              </a>
+              </Link>
+            </p>
+            <p className="mb-4">
+              <Link to="/resume" className="">
+                Resume
+              </Link>
             </p>
             <p>
-              <a href="#!" className="text-gray-400">
-                Resume
-              </a>
+              <Link to="/blog" className="">
+                Blog
+              </Link>
             </p>
           </div>
 
@@ -248,7 +246,9 @@ const Footer = () => {
       {/* copyright information */}
       <div className="text-center p-6 bg-gray-900">
         <span>© {new Date().getFullYear()}</span>
-        <span className="text-lg ml-4 block">All Rights Reserved @Zakaria Bin Nizam</span>
+        <span className="text-lg ml-4 block">
+          All Rights Reserved @Zakaria Bin Nizam
+        </span>
       </div>
     </footer>
   );

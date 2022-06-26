@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import SkillsCard from "./SkillsCard";
-import { expertise } from "./SkillsData";
+import {expertise, comfortable, familiar,  tools } from "./SkillsData";
 
 const Skills = () => {
 
@@ -23,7 +23,7 @@ const Skills = () => {
       <div className="border border-neutral rounded-lg mt-4">
         <h2 className="skill-title pl-6 pt-4">Comfortable</h2>
         <div className="skill-container">
-          {expertise.map((exp) => (
+          {comfortable.map((exp) => (
             <SkillsCard key={exp.id} skill={exp} />
           ))}
         </div>
@@ -33,7 +33,7 @@ const Skills = () => {
       <div className="border border-neutral rounded-lg mt-4">
         <h2 className="skill-title pl-6 pt-4">Familiar</h2>
         <div className="skill-container">
-          {expertise.map((exp) => (
+          {familiar.map((exp) => (
             <SkillsCard key={exp.id} skill={exp} />
           ))}
         </div>
@@ -43,7 +43,7 @@ const Skills = () => {
       <div className="border border-dark rounded-lg mt-4">
         <h2 className="skill-title pl-6 pt-4">Tools</h2>
         <div className="skill-container">
-          {expertise.map((exp) => (
+          {tools.map((exp) => (
             <SkillsCard key={exp.id} skill={exp} />
           ))}
         </div>

@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Education from "./Education/Education";
 import "./Resume.css";
 import Skills from "./Skills/Skills";
+import Training from "./Training/Training";
 const Resume = () => {
+  const [visibleSection, setVisibleSection] = useState({
+    skills: true,
+    education: false,
+    courses: false,
+  });
+
+  function handelSkillsClick() {
+    setVisibleSection({ skills: true, education: false, courses: false });
+  }
+
+  function handelEducationClick() {
+    setVisibleSection({ skills: false, education: true, courses: false });
+  }
+
+  function handelCoursesClick() {
+    setVisibleSection({ skills: false, education: false, courses: true });
+  }
+
   return (
     <div className="bg-dark  px-4" id="resume">
       <div className="py-10 max-w-screen-xl mx-auto">
@@ -19,20 +39,30 @@ const Resume = () => {
         {/* route */}
         <div className="hidden md:block">
           <ul className="resume-navigation">
-            <li>
+
+            <li onClick={handelSkillsClick}>
               <Link to="">Skills</Link>
             </li>
-            <li>
+
+            <li onClick={handelEducationClick}>
               <Link to="">Education</Link>
             </li>
-            <li>
+
+            <li onClick={handelCoursesClick}>
               <Link to="">Courses</Link>
             </li>
           </ul>
         </div>
 
         <div className="">
+          {visibleSection.skills && <Skills />}
+          {visibleSection.education && <Education />}
+          {visibleSection.courses && <Training />}
+          <div className={`w-full h-full md:hidden`}>
           <Skills />
+          <Education/>
+          <Training />
+          </div>
         </div>
       </div>
     </div>
