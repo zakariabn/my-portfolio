@@ -6,6 +6,7 @@ import myImg from "../../../asset/Images/profile-img_500x500.png";
 import resume from  "../../../asset/file/Zakaria-Bin-Nizam_web_dev_resume_2022.pdf"
 import "./Hero.css";
 import { Link } from "react-router-dom";
+import { faGithubAlt, faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
   const props = useSpring({
@@ -37,7 +38,7 @@ const Hero = () => {
                 <h3 className="text-5xl md:text-6xl font-bold text-white">
                   Web Developer
                 </h3>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex items-end flex-wrap gap-4">
                   <button className="hero-btn mt-4">
                     <FontAwesomeIcon
                       icon={faArrowRight}
@@ -56,6 +57,17 @@ const Hero = () => {
                       className="text-sm text-primary ml-5 hero-res-ico-animation"
                     />
                   </a>
+
+                  <span className="inline-flex gap-2.5">
+                    <a href="https://github.com/zakariabn" rel="noreferrer" target="_blank">
+                      <FontAwesomeIcon icon={faLinkedin} className="text-xl text-slate-400 cursor-pointer mb-[-5px]"/>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/zakaria-bn" rel="noreferrer" target="_blank">
+                      <FontAwesomeIcon icon={faGithubSquare} className="text-xl text-slate-400 cursor-pointer mb-[-5px]"/>
+                    </a>
+                  </span>
+
                 </div>
               </div>
             </div>

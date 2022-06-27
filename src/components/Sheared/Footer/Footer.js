@@ -14,7 +14,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="text-center lg:text-left bg-dark text-gray-200 mt-1">
+    <footer className="text-center lg:text-left bg-dark text-gray-200">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
         {/* social links */}
         <div className="flex justify-center w-full">
@@ -22,32 +22,32 @@ const Footer = () => {
             href="https://github.com/zakariabn"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-400 mr-5">
-            <FontAwesomeIcon icon={faGithub} />
+            className="text-slate-300 mr-5">
+            <FontAwesomeIcon icon={faGithub} className="text-xl"/>
           </a>
 
           <a
             href="https://www.linkedin.com/in/zakaria-bn"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-400 mr-5">
-            <FontAwesomeIcon icon={faLinkedinIn} />
+            className="text-slate-300 mr-5">
+            <FontAwesomeIcon icon={faLinkedinIn} className="text-xl"/>
           </a>
 
           <a
             href="https://twitter.com"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-400 mr-5">
-            <FontAwesomeIcon icon={faTwitter} />
+            className="text-slate-300 mr-5">
+            <FontAwesomeIcon icon={faTwitter} className="text-xl"/>
           </a>
 
           <a
             href="https://www.facebook.com/zakaria.bn38"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-400 mr-5">
-            <FontAwesomeIcon icon={faFacebookF} />
+            className="text-slate-300 mr-5">
+            <FontAwesomeIcon icon={faFacebookF} className="text-xl"/>
           </a>
         </div>
       </div>
